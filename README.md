@@ -62,6 +62,9 @@ result = optimizer.optimize(
             generations=200)
 
 best = result.chromosomes[0]
+
+# Expected result is Chromosome([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], cost = 10)
+# Note that the solution Chromosome([3, 4, 5, 6, 7, 8, 9, 0, 1, 2]), cost = 10) has the same meaning.
 ```
 
 Currently only the `TournamentSelection` is implemented as the selection operator. 
