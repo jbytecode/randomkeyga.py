@@ -39,7 +39,7 @@ def test_simple_permutation():
 
     # optimize 10 times and get the best result
     hasfound = False
-    for i in range(10):
+    for i in range(5):
         result = optimizer.optimize(
             popsize=popsize,
             chsize=chsize,
