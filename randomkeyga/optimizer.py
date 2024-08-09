@@ -210,8 +210,9 @@ def generation(pop: Population,
             child = parent1
 
         # Mutation
-        if np.random.rand() < mutation_rate:
-            child = mutation_operator.mutate(child)
+        # The mutation operator already use the probability information
+        # when mutating individual values
+        child = mutation_operator.mutate(child)
 
         # Add the child to the new population
         new_pop.chromosomes[i] = child
